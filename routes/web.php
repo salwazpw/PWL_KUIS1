@@ -21,3 +21,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
 Route::get('/about', [App\Http\Controllers\HomeController::class, 'about']);
 Route::get('/services', [App\Http\Controllers\HomeController::class, 'services']);
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact']);
+Route::get('/barang', [App\Http\Controllers\BarangController::class, 'index']);
