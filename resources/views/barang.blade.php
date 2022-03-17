@@ -24,5 +24,9 @@
                 @endforeach
                  </tbody>
             </table>
-			
+            Halaman : {{ $blog->currentPage() }} <br/>
+            Jumlah Data : {{ $blog->total() }} <br/>
+            Data Per Halaman : {{ $blog->perPage() }} <br/>
+            <br>
+            {{ $blog->links() }}
 @endsection
