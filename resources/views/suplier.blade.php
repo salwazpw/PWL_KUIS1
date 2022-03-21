@@ -21,5 +21,10 @@
                 </tr>
                 @endforeach
                  </tbody>
-            </table>			
+            </table>
+            Halaman : {{ $blog->currentPage() }} <br/>
+            Jumlah Data : {{ $blog->total() }} <br/>
+            Data Per Halaman : {{ $blog->perPage() }} <br/>
+            <br>
+            {{ $blog->links() }}			
 @endsection
