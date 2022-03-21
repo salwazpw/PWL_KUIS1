@@ -16,7 +16,7 @@ class CreateSupliersTable extends Migration
         Schema::create('Supliers', function (Blueprint $table) {
             $table->id();
             $table->string('namaSuplier', 100)->index();
-            $table->string('merkMobil', 100)->index();
+            $table->string('merkMobil', 100);
             $table->timestamps();
         });
     }
