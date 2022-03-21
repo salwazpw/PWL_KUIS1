@@ -9,7 +9,7 @@ class BarangController extends Controller
 {
     //
     public function index(){
-        $data = DB::table('Barangs')->paginate(5);
+        $data = Barang::paginate(5);
         return view('barang', ['blog'=> $data], ['title'=>'Mobil']);
     }
 }

@@ -16,8 +16,8 @@ class CreateBarangsTable extends Migration
         Schema::create('Barangs', function (Blueprint $table) {
             $table->id();
             $table->String('merkMobil', 100)->index();
-            $table->String('gambarMobil')->index();
-            $table->String('harga', 100)->index();
+            $table->String('gambarMobil');
+            $table->String('harga', 100);
             $table->timestamps();
         });
     }
